@@ -2,8 +2,6 @@ class Solution:
     def isUgly(self, n: int) -> bool: 
         if n <= 0:
             return False
-        if n < 2:
-            return True
 
         while n % 2 == 0:
             n //= 2

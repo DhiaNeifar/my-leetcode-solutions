@@ -1,6 +1,6 @@
 class Solution {
 public:
-    long long lengthAfterTransformations(string s, int t) {
+    int lengthAfterTransformations(string s, int t) {
         long long arr[26] = {0};
         long long result = 0;
         const long long div = 1000000007;

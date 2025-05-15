@@ -11,4 +11,4 @@ class Solution:
                     k += 1
                 j += 1
             i += 1   
-        return max_ if max_ > 0 else 0
+        return max_

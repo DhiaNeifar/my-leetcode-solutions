@@ -6,7 +6,6 @@ class Solution:
         count = 0
         for i in range(len(nums)):
             count += 1 if nums[i] == 1 else -1
-            x = tracker.get(count, 0)
             if count in tracker:
                 maxlen = max(maxlen, i - tracker[count])
             else:
