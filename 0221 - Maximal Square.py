@@ -22,7 +22,6 @@ class Solution:
             if dp[0][j] == 1:
                 result = 1
                 break
-
         for i in range(m):
             if dp[i][0] == 1:
                 result = 1
