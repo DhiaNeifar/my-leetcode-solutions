@@ -7,7 +7,6 @@ class Solution:
                     break
                 up_range += 1
             return up_range
-
         def CheckLeftBorders(table, row, column):
             left_range = 0
             for k in range(1, table[row - 1][column - 1] + 1):
