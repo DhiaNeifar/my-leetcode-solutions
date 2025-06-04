@@ -11,13 +11,12 @@
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
-        int length = 0;
-        struct ListNode* new_head = head;
-        while(new_head){new_head = new_head->next; length++;}
-        length >>= 1;
-        new_head = head;
-        int i = 0;
-        while(length--){new_head = new_head->next;}
-        return new_head;
+        ListNode* result = head;
+        ListNode* iterator = head;
+        while(iterator && iterator->next){
+            iterator = iterator->next->next;
+            result = result->next;
         }
+        return result;
+    }
 };
